@@ -1,18 +1,27 @@
 <template>
   <div class="home">
+    <h1>J.E.B.A.C. Sanepid</h1>
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <jebac-sanepid-chart/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
+import JebacSanepidChart from "@/components/JebacSanepidChart";
 export default {
   name: 'home',
   components: {
-    HelloWorld
+      JebacSanepidChart
   }
 }
 </script>
+
+<style lang="scss">
+  .home {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+</style>
