@@ -7,8 +7,8 @@
         class="input"
         type="text"
         v-model="search"
-        aria-label="Nazwa choroby (minimum 5 znaków)"
-        placeholder="Nazwa choroby (minimum 5 znaków)"
+        aria-label="Nazwa choroby"
+        placeholder="Nazwa choroby"
     >
     <button @click="blink">Szukaj</button>
   </div>
