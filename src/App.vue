@@ -5,9 +5,6 @@
       komputerowe dla ciebie i dla rodziny</a>, bez użycia środków Unii Europejskiej ani Państwa Polskiego.</p>
 
     <router-view/>
-     <div class="counter">
-       <img src="https://www.freevisitorcounters.com/ctrimg/counter-id-612337.png" alt="counter">
-     </div>
   </div>
 </template>
 
