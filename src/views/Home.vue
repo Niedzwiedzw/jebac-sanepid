@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <h1>J.E.B.A.C. Sanepid</h1>
-    <img alt="Vue logo" src="../assets/logo.png">
     <jebac-sanepid-chart/>
   </div>
 </template>

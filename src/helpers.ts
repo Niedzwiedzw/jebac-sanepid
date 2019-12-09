@@ -25,7 +25,7 @@ export function tryFormatTime(val: string): string {
 
 
 export function buildMultiLineChartData(data: { [key: string]: { [key: string]: number } }, colours = MORE_COLOURS) {
-    const bottomLabels = reversed(keys(data)); // this is reversed...
+    const bottomLabels = keys(data); // this is reversed...
     const subsetNames = keys(first(values(data))!);
 
     return cloneDeep({
@@ -33,7 +33,7 @@ export function buildMultiLineChartData(data: { [key: string]: { [key: string]: 
         datasets: map(
             zip(subsetNames, take(colours, subsetNames.length)),
             ([subsetName, colour]) => ({
-                data: reversed(map(values(data), (subset) => subset[subsetName!])), // ...because this is reversed
+                data: map(values(data), (subset) => subset[subsetName!]), // ...because this is reversed
                 label: subsetName!,
                 borderColor: colour!,
             }),
